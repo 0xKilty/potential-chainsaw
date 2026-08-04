@@ -42,3 +42,5 @@ int is_ca = X509_check_ca(cert);
 
 printf("is_ca = %d\n", is_ca);
 ```
+
+Consider using `fullchain.pem` instead of just `cert.pem` on the server side.
