@@ -33,3 +33,5 @@ int verify_callback(int preverify_ok, X509_STORE_CTX *x509_ctx)
     return preverify_ok;
 }
 ```
+
+Only add the last certificate in the chain as the trusted root CA.
