@@ -35,3 +35,10 @@ int verify_callback(int preverify_ok, X509_STORE_CTX *x509_ctx)
 ```
 
 Only add the last certificate in the chain as the trusted root CA.
+
+Check if the cert is the CA
+```
+int is_ca = X509_check_ca(cert);
+
+printf("is_ca = %d\n", is_ca);
+```
